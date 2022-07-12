@@ -9,7 +9,7 @@ import { BsCoin } from 'react-icons/bs'
 
 import { useState } from 'react'
 
-const Navbar = () => {
+const Navbar = ({ profile }) => {
     const [showDeleteSearch,setShowDS]=useState(false)
     const [searchText,setSearchText]=useState("")
 
@@ -18,13 +18,10 @@ const Navbar = () => {
     const [showSettings,setShowSettings]=useState(false)
 
     const iconSize=25;
-    const profile={
-        username:"Username",
-        robux: 0,
-        picture: {
-            src: ProfilePicture,
-            size: 30,
-        },
+    
+    profile.picture={
+        src: ProfilePicture,
+        size:30
     }
 
     const deleteSearch = (inputId) => {
