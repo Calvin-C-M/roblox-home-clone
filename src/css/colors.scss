@@ -2,3 +2,7 @@ $color-primary: #dee1e3;
 $color-secondary: #c8cdd0;
 $color-tertiary: #c7cbce;
 $color-dark: #393b3d;
+
+p, span, a, h1, h2, h3 {
+    color: $color-dark;
+}
